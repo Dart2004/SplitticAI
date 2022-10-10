@@ -1,5 +1,4 @@
 from setuptools import setup
-import pypandoc
 
 setup(
     name='Splittic',
@@ -11,5 +10,5 @@ setup(
     version='1.0',
     license='MIT',
     description='The Most Advanced AI Ever',
-    long_description=pypandoc.convert('README.md', 'rst')
+    long_description=open('README.rst')
 )
